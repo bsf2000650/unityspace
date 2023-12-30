@@ -1,3 +1,6 @@
+p {
+    color: #272a2d;
+}
 .header {
     background-color: rgb(150,51,255);
   color: white;
@@ -84,10 +87,15 @@
     line-height: 30px;
     width: 80%;
     font-size: 15px;
+    color:#272a2d !important;
+    -webkit-text-fill-color: #272a2d !important;
+    -webkit-background-clip: text !important;
+    background-clip:  text !important;
 }
 .loginDetailsDiv form input::placeholder {
     font-size: 15px;
     font-weight: lighter;
+    color: #272a2d;
 }
 .loginDetailsDiv form input:focus{
     outline: none;

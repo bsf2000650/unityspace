@@ -1,0 +1,16 @@
+Error # 1:
+
+Input boxes background color gets black on android physical devices. Given is the soluions.
+
+
+.loginDetailsDiv form input,
+.loginDetailsDiv form select {
+    border: none;
+    line-height: 30px;
+    width: 80%;
+    font-size: 15px;
+    color:black !important;
+    -webkit-text-fill-color: #fff !important;
+    -webkit-background-clip: text !important;
+    background-clip:  text !important;
+}

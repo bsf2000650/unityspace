@@ -1,5 +1,8 @@
+p {
+    color: #272a2d;
+}
 .header {
-    background-color: rgb(150,51,255);
+  background-color: rgb(150,51,255);
   color: white;
   width: 100%;
   height: 11vh;
@@ -83,14 +86,15 @@
     line-height: 30px;
     width: 80%;
     font-size: 15px;
-    color: #fff !important;
-    -webkit-text-fill-color: #fff !important;
+    color:#272a2d !important;
+    -webkit-text-fill-color: #272a2d !important;
     -webkit-background-clip: text !important;
     background-clip:  text !important;
 }
 .signUpDetailsDiv form input::placeholder {
     font-size: 15px;
     font-weight: lighter;
+    color: #272a2d;
 }
 .signUpDetailsDiv form input:focus{
     outline: none;
