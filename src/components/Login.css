@@ -1,0 +1,274 @@
+.header {
+    background-color: rgb(150,51,255);
+  color: white;
+  width: 100%;
+  height: 11vh;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  vertical-align: middle;
+  }
+
+.loginMainDiv {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;  
+        background-color: rgb(150,51,255);
+        height: 100vh;
+}
+
+.loginImageDiv {
+    padding: 2px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -130px;
+}
+
+.loginImageDiv .unitySpaceLogo {
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    margin: 0px;
+    margin-left: -248px;
+}
+
+.loginImageDiv .tagLine {
+    font-size: 25px;
+    color: white;
+    text-align: left;
+    margin: 0px;
+}
+
+.loginDetailsDiv {
+    padding: 2px;
+    width: 100%;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.loginDetailsDiv form {
+    margin-left: 50px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background-color: white;
+    width: 62%;
+    box-shadow: 8px 8px 30px rgba(223,231,252,0.3),
+                -8px -8px 30px rgba(182, 150, 217,0.3),
+                8px -8px 30px rgba(182, 150, 217,0.3),
+                -8px 8px 30px rgba(182, 150, 217,0.3);
+    border-radius: 90px;
+    margin-bottom: 25px;
+    height: 80vh;
+  }
+
+  .loginDetailsDiv form .wrapper{
+    display: flex;
+  }
+
+.loginDetailsDiv form label {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.loginDetailsDiv form input,
+.loginDetailsDiv form select {
+    border: none;
+    line-height: 30px;
+    width: 80%;
+    font-size: 15px;
+}
+.loginDetailsDiv form input::placeholder {
+    font-size: 15px;
+    font-weight: lighter;
+}
+.loginDetailsDiv form input:focus{
+    outline: none;
+}
+
+.loginDetailsDiv form .reactIcons {
+    margin: 13px;
+    color: rgb(150,51,255);
+    border: 2px solid rgb(150,51,255);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.loginDetailsDiv form label,
+.loginDetailsDiv form button{
+        border-radius: 25px;
+        margin: 5px 12px;
+        line-height: 32px;
+        width: 80%;
+        box-shadow: 5px 5px 8px rgb(223,231,252),
+                -5px -5px 8px rgb(223,231,252);
+        border: none;
+        height: 8vh;
+        transition: border-bottom 0.5 ease-in-out;
+    }
+
+    .loginDetailsDiv form button {
+        font-family: 'Your Chosen Font', sans-serif;
+        background-color: rgb(150,51,255); /* Button background color */
+        color: #fff; /* Button text color */
+        padding: 10px 20px; /* Adjust padding as needed */
+        border: none; /* Remove default button border */
+        border-radius: 5px; /* Add border-radius for rounded corners */
+        cursor: pointer; /* Change cursor on hover */
+        /* Add other styling as needed */
+        width: 60%;
+        height: 8vh;
+        border-radius: 20px;
+      }
+      
+      /* Change button styles on hover */
+      .loginDetailsDiv form button:hover {
+        background-color: #06111d; /* Adjust hover background color */
+        /* Add other hover styling as needed */
+      }
+
+    .loginDetailsDiv form select {
+        background-color: white;
+    }
+
+     #gender #id
+      {
+        font-size: 15px;
+    }
+    
+  
+    .loginDetailsDiv form label:hover,
+    .loginDetailsDiv form select:hover,
+    .loginDetailsDiv form button:hover {
+        border-bottom: 2px solid rgba(150, 51, 255, 0.8); 
+    }
+
+    .loginDetailsDiv form .termsAndConditions {
+        font-size: 13px;
+        margin: 0px;
+    }
+
+  
+/********************************** Desktops and Laptops *****************************/
+
+@media screen and (min-width: 1024px) {
+    .loginImageDiv .unitySpaceLogo {
+        margin-left: 0px;
+    }
+    .loginImageDiv {
+        align-items: flex-start;
+        margin-left: 30px;
+    }
+    .loginDetailsDiv form {
+        margin-left: 0px;
+        width: 75%;
+    }
+    .loginDetailsDiv form input, .loginDetailsDiv form select {
+        width: 76%;
+    }
+
+}
+
+/********************************** Tablets and iPads *****************************/
+
+@media screen and (min-width: 769px) and (max-width:1023px) {
+    
+    .loginImageDiv .unitySpaceLogo {
+        margin-left: 0px;
+    }
+    .loginImageDiv {
+        align-items: flex-start;
+        margin-left: 30px;
+    }
+    .loginDetailsDiv form {
+        margin-left: 0px;
+        width: 82%;
+    }
+    .loginDetailsDiv form input, .loginDetailsDiv form select {
+        width: 73%;
+    }
+}
+
+/********************************* Phones ****************************************/
+
+@media screen and (max-width: 768px) {
+    .loginImageDiv .unitySpaceLogo {
+        margin-left: 0px;
+    }
+    .loginImageDiv {
+        align-items: flex-start;
+        margin-left: 30px;
+    }
+    .loginDetailsDiv form {
+        margin-left: 0px;
+        width: 90%;
+    }
+    .loginDetailsDiv form input, .loginDetailsDiv form select {
+        width: 73%;
+        height: 6vh;
+    }
+}
+
+
+
+@media screen and (max-width: 468px) {
+    .loginMainDiv {
+        flex-direction: column;
+        height: 107vh;
+}
+    
+    .mainDiv {
+        flex-direction: column;
+    }
+    .loginImageDiv {
+        margin-top: 0px;
+    }
+    .loginDetailsDiv form {
+        width: 76%;
+    }
+    .loginImageDiv .tagLine {
+        padding-right: 30px;
+    }
+    .loginDetailsDiv form .termsAndConditions {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .loginDetailsDiv form input::placeholder {
+        font-size: 15px;
+        font-weight: lighter;
+    }
+    .loginDetailsDiv form .termsAndConditions {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .loginMainDiv {
+        height: 110vh;
+    }
+    .loginDetailsDiv form {
+        width: 85%;
+        border-radius: 77px;
+        margin-left: 15px;
+    }
+    .loginDetailsDiv form label, .loginDetailsDiv form button {
+        width: 94%;
+    }
+    .loginDetailsDiv form .termsAndConditions {
+        font-size: 13px;
+    }
+}
+
+
+
+
+

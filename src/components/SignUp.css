@@ -1,0 +1,264 @@
+.header {
+    background-color: rgb(150,51,255);
+  color: white;
+  width: 100%;
+  height: 11vh;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  vertical-align: middle;
+  }
+
+.mainDiv {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;  
+        background-color: rgb(150,51,255);
+        /* height: 100vh; */
+}
+
+.imageDiv {
+    padding: 2px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -130px;
+}
+
+.imageDiv .unitySpaceLogo {
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    margin: 0px;
+    margin-left: -248px;
+}
+
+.imageDiv .tagLine {
+    font-size: 25px;
+    color: white;
+    text-align: left;
+    margin: 0px;
+}
+
+.signUpDetailsDiv {
+    padding: 2px;
+    width: 100%;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.signUpDetailsDiv form {
+    margin-left: 50px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background-color: white;
+    width: 62%;
+    box-shadow: 8px 8px 30px rgba(223,231,252,0.3),
+                -8px -8px 30px rgba(182, 150, 217,0.3),
+                8px -8px 30px rgba(182, 150, 217,0.3),
+                -8px 8px 30px rgba(182, 150, 217,0.3);
+    border-radius: 90px;
+    margin-bottom: 25px;
+  }
+
+  .signUpDetailsDiv form .wrapper{
+    display: flex;
+  }
+
+.signUpDetailsDiv form label {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.signUpDetailsDiv form input,
+.signUpDetailsDiv form select {
+    border: none;
+    line-height: 30px;
+    width: 80%;
+    font-size: 15px;
+}
+.signUpDetailsDiv form input::placeholder {
+    font-size: 15px;
+    font-weight: lighter;
+}
+.signUpDetailsDiv form input:focus{
+    outline: none;
+}
+
+.signUpDetailsDiv form .reactIcons {
+    margin: 13px;
+    color: rgb(150,51,255);
+    border: 2px solid rgb(150,51,255);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.signUpDetailsDiv form label,
+.signUpDetailsDiv form button{
+        border-radius: 25px;
+        margin: 5px 12px;
+        line-height: 32px;
+        width: 80%;
+        box-shadow: 5px 5px 8px rgb(223,231,252),
+                -5px -5px 8px rgb(223,231,252);
+        border: none;
+        height: 8vh;
+        transition: border-bottom 0.5 ease-in-out;
+    }
+
+    .signUpDetailsDiv form button {
+        font-family: 'Your Chosen Font', sans-serif;
+        background-color: rgb(150,51,255); /* Button background color */
+        color: #fff; /* Button text color */
+        padding: 10px 20px; /* Adjust padding as needed */
+        border: none; /* Remove default button border */
+        border-radius: 5px; /* Add border-radius for rounded corners */
+        cursor: pointer; /* Change cursor on hover */
+        /* Add other styling as needed */
+        width: 60%;
+        height: 8vh;
+        border-radius: 20px;
+      }
+      
+      /* Change button styles on hover */
+      .signUpDetailsDiv form button:hover {
+        background-color: #06111d; /* Adjust hover background color */
+        /* Add other hover styling as needed */
+      }
+
+    .signUpDetailsDiv form select {
+        background-color: white;
+    }
+
+     #gender #id
+      {
+        font-size: 15px;
+    }
+    
+  
+    .signUpDetailsDiv form label:hover,
+    .signUpDetailsDiv form select:hover,
+    .signUpDetailsDiv form button:hover {
+        border-bottom: 2px solid rgba(150, 51, 255, 0.8); 
+    }
+
+    .signUpDetailsDiv form .termsAndConditions {
+        font-size: 13px;
+        margin: 0px;
+    }
+
+  
+/********************************** Desktops and Laptops *****************************/
+
+@media screen and (min-width: 1024px) {
+    .imageDiv .unitySpaceLogo {
+        margin-left: 0px;
+    }
+    .imageDiv {
+        align-items: flex-start;
+        margin-left: 30px;
+    }
+    .signUpDetailsDiv form {
+        margin-left: 0px;
+        width: 75%;
+    }
+    .signUpDetailsDiv form input, .signUpDetailsDiv form select {
+        width: 76%;
+    }
+
+}
+
+/********************************** Tablets and iPads *****************************/
+
+@media screen and (min-width: 769px) and (max-width:1023px) {
+    .imageDiv .unitySpaceLogo {
+        margin-left: 0px;
+    }
+    .imageDiv {
+        align-items: flex-start;
+        margin-left: 30px;
+    }
+    .signUpDetailsDiv form {
+        margin-left: 0px;
+        width: 82%;
+    }
+    .signUpDetailsDiv form input, .signUpDetailsDiv form select {
+        width: 73%;
+    }
+}
+
+/********************************* Phones ****************************************/
+
+@media screen and (max-width: 768px) {
+    .imageDiv .unitySpaceLogo {
+        margin-left: 0px;
+    }
+    .imageDiv {
+        align-items: flex-start;
+        margin-left: 30px;
+    }
+    .signUpDetailsDiv form {
+        margin-left: 0px;
+        width: 90%;
+    }
+    .signUpDetailsDiv form input, .signUpDetailsDiv form select {
+        width: 73%;
+        height: 6vh;
+    }
+}
+
+
+
+@media screen and (max-width: 468px) {
+    
+    .mainDiv {
+        flex-direction: column;
+    }
+    .imageDiv {
+        margin-top: 0px;
+    }
+    .signUpDetailsDiv form {
+        width: 76%;
+    }
+    .imageDiv .tagLine {
+        padding-right: 30px;
+    }
+    .signUpDetailsDiv form .termsAndConditions {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .signUpDetailsDiv form input::placeholder {
+        font-size: 15px;
+        font-weight: lighter;
+    }
+    .signUpDetailsDiv form .termsAndConditions {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .signUpDetailsDiv form {
+        width: 85%;
+        border-radius: 77px;
+    }
+    .signUpDetailsDiv form label, .signUpDetailsDiv form button {
+        width: 94%;
+    }
+    .signUpDetailsDiv form .termsAndConditions {
+        font-size: 13px;
+    }
+}
+
+
+
+
+
