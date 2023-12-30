@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/unityspace/static/css/main.fedc0102.css",
+    "main.css": "/unityspace/static/css/main.2a92b95e.css",
     "main.js": "/unityspace/static/js/main.7ecfb247.js",
     "static/js/787.baaca354.chunk.js": "/unityspace/static/js/787.baaca354.chunk.js",
     "static/media/soc_img1.gif": "/unityspace/static/media/soc_img1.07df6d1e57e5ab03facf.gif",
     "index.html": "/unityspace/index.html",
-    "main.fedc0102.css.map": "/unityspace/static/css/main.fedc0102.css.map",
+    "main.2a92b95e.css.map": "/unityspace/static/css/main.2a92b95e.css.map",
     "main.7ecfb247.js.map": "/unityspace/static/js/main.7ecfb247.js.map",
     "787.baaca354.chunk.js.map": "/unityspace/static/js/787.baaca354.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fedc0102.css",
+    "static/css/main.2a92b95e.css",
     "static/js/main.7ecfb247.js"
   ]
 }
